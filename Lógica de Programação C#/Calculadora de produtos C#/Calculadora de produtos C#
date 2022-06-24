@@ -1,0 +1,20 @@
+using System;
+
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Digite o código do produto");
+        int cod = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Digite a quantidade de produtos");
+        int quantidade = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Digite o valor unitário");
+        double valor = double.Parse(Console.ReadLine());
+
+        double valorTotal = quantidade * valor;
+        
+        Console.WriteLine(valorTotal);
+    }
+}
