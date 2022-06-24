@@ -1,0 +1,22 @@
+using System;
+using System.Globalization;
+
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Digite seu número");
+        int num = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Digite as horas trabalhadas");
+        double horas = double.Parse(Console.ReadLine());
+
+        Console.WriteLine("Digite o valor da sua hora");
+        double valor = double.Parse(Console.ReadLine());
+
+        double salary = horas * valor;
+
+        Console.WriteLine(num);
+        Console.WriteLine(salary.ToString("F2", CultureInfo.InvariantCulture));
+    }
+}
